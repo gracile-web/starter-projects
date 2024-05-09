@@ -1,18 +1,19 @@
 {
   "name": "@gracile/template--simple-server",
   "type": "module",
+  "version": "0.0.1",
   "scripts": {
     "dev": "gracile-dev",
     "// build": "gracile build # Disabled for now",
     "preview": "gracile preview"
   },
   "dependencies": {
-    "@gracile/gracile": "link:../../gracile/packages/gracile",
-    "@gracile/markdown": "link:../../gracile/packages/addons/markdown",
-    "@gracile/markdown-preset-marked": "link:../../gracile/packages/addons/markdown-preset-marked",
-    "@gracile/metadata": "link:../../gracile/packages/addons/metadata",
-    "@gracile/sitemap": "link:../../gracile/packages/addons/sitemap",
-    "@gracile/svg": "link:../../gracile/packages/addons/svg",
+    "@gracile/gracile": "latest",
+    "@gracile/markdown": "latest",
+    "@gracile/markdown-preset-marked": "latest",
+    "@gracile/metadata": "latest",
+    "@gracile/sitemap": "latest",
+    "@gracile/svg": "latest",
     "lit": "^3.1.3"
   },
   "devDependencies": {
