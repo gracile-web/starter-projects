@@ -1,0 +1,94 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck ...
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
+import { partials } from './__partials.js';
+
+export const templates = {
+	'basic-blog-static': {
+		'README.md': await partials.readme({
+			name: 'basic-blog-static',
+			title: 'Basic Blog (static)',
+			features: /* md */ `
+- ✅ Minimal styling (make it your own!)
+- ✅ SEO-friendly with canonical URLs and OpenGraph data
+- ✅ Sitemap support
+- ✅ Markdown support
+- ✅ SVG support
+- ✅ Server-rendered Lit Elements
+`.trim(),
+			tryout: 'https://gracile-template-basic-blog-static.netlify.app/',
+		}),
+
+		'src/ambient.d.ts': `$/// <reference types="@gracile/gracile/ambient" />
+/// <reference types="@gracile/svg/ambient" />
+/// <reference types="@gracile/markdown/ambient" />
+`,
+
+		'.gitignore': true,
+		'tsconfig.json': true,
+		'src/tokens.scss': true,
+		'src/document.*': true,
+		'src/features/shell/*': true,
+		'src/assets/gracile-logo.svg': true,
+		'src/features/tree.ts': true,
+		'.vscode/*': true,
+		'public/favicon.svg': true,
+
+		'src/features/counters/*': true,
+		'src/features/gracile-welcome.*': true,
+		'src/features/cool-canvas.ts': true,
+		'src/routes/(home).*': true,
+		'src/content/home.md': true,
+		'src/common.scss': true,
+	},
+
+	'minimal-static': {
+		'README.md': await partials.readme({
+			name: 'minimal-static',
+			title: 'Minimal setup (static)',
+			features: undefined,
+		}),
+
+		'src/ambient.d.ts': `/// <reference types="@gracile/gracile/ambient" />
+`,
+
+		'.gitignore': true,
+		'tsconfig.json': true,
+		'public/favicon.svg': true,
+	},
+
+	'simple-server': {
+		'README.md': await partials.readme({
+			name: 'simple-server',
+			title: 'Simple server',
+			features: undefined,
+			description: /* md */ `
+> "Server" output mode is still **experimental**!
+> It will only work in **development** mode.
+`,
+		}),
+
+		'src/ambient.d.ts': `/// <reference types="@gracile/gracile/ambient" />
+/// <reference types="@gracile/svg/ambient" />
+/// <reference types="@gracile/markdown/ambient" />
+`,
+
+		'.gitignore': true,
+		'tsconfig.json': true,
+		'src/tokens.scss': true,
+		'src/document.*': true,
+		'src/features/shell/*': true,
+		'src/assets/gracile-logo.svg': true,
+		'src/features/tree.ts': true,
+		'.vscode/*': true,
+		'public/favicon.svg': true,
+
+		'src/features/counters/*': true,
+		'src/features/gracile-welcome.*': true,
+		'src/features/cool-canvas.ts': true,
+		'src/routes/(home).*': true,
+		'src/content/home.md': true,
+		'src/common.scss': true,
+	},
+};
