@@ -20,7 +20,7 @@ export const templates = {
 			tryout: 'https://gracile-template-basic-blog-static.netlify.app/',
 		}),
 
-		'src/ambient.d.ts': `$/// <reference types="@gracile/gracile/ambient" />
+		'src/ambient.d.ts': `/// <reference types="@gracile/gracile/ambient" />
 /// <reference types="@gracile/svg/ambient" />
 /// <reference types="@gracile/markdown/ambient" />
 `,
