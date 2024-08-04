@@ -1,5 +1,5 @@
 {
-  "name": "@gracile/demo-projects",
+  "name": "@gracile/starter-projects",
   "version": "1.0.0",
   "private": true,
   "description": "A thin, full-stack, web framework",
@@ -16,7 +16,7 @@
   "homepage": "https://gracile.js.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gracile-web/demo-projects"
+    "url": "https://github.com/gracile-web/starter-projects"
   },
   "license": "ISC",
   "author": {
@@ -31,7 +31,7 @@
     "// deploy": "pnpm -r netlify deploy -d dist",
     "// build": "turbo build --concurrency 20",
     "// clean": "turbo clean --concurrency 20",
-    "dev": "tsx --watch __scripts/generate.ts",
+    "dev": "tsx --watch src/tasks/tasks.ts",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "preinstall": "npx only-allow pnpm",
@@ -79,5 +79,10 @@
     "tsx": "^4.7.2",
     "typescript": "5.5.0-beta"
   },
-  "packageManager": "pnpm@9.0.6"
+  "packageManager": "pnpm@9.1.1",
+  "dependencies": {
+    "chokidar": "^3.6.0",
+    "fast-glob": "^3.3.2",
+    "picocolors": "^1.0.1"
+  }
 }

@@ -1,0 +1,19 @@
+{
+  "name": "@gracile/template--minimal-static",
+  "type": "module",
+  "version": "0.0.3",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@gracile/gracile": "link:../../../gracile/packages/gracile",
+    "lit": "^3.1.4",
+    "vite": "^5.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "typescript": "^5.5.4"
+  }
+}

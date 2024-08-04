@@ -87,6 +87,7 @@ module.exports = {
         'import/prefer-default-export': 'off',
 
         'import/extensions': 'off',
+        '@typescript-eslint/no-namespace': 'off',
 
         'prefer-destructuring': 'off',
         // 'import/extensions': [
