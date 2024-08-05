@@ -1,5 +1,5 @@
 {
-  "name": "@gracile/template--basic-blog-static",
+  "name": "@gracile/template--basics-server",
   "type": "module",
   "version": "0.0.2",
   "scripts": {

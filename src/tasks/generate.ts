@@ -23,6 +23,10 @@ const templates = [
 		merge: ['./inventory/minimal/**'],
 		name: 'minimal-server-express',
 	},
+	{
+		merge: ['./inventory/minimal/**'],
+		name: 'minimal-server-hono',
+	},
 ];
 
 // await glob('')
