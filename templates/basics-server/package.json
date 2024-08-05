@@ -1,11 +1,13 @@
 {
   "name": "@gracile/template--basics-server",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "dev": "vite",
+    "check": "tsc",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "node --watch server.js",
+    "start": "node server.js"
   },
   "dependencies": {
     "@gracile/gracile": "link:../../../gracile/packages/gracile",
