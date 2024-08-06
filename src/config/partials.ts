@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck ...
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { exec, md } from '../utils.js';
+import { exec } from '../utils.js';
 
 const filesEmojis = {
 	scss: '🟪',
@@ -71,12 +71,13 @@ ${(
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| \`npm install\`             | Installs dependencies                            |
-| \`npm run dev\`             | Starts local dev server at \`localhost:4567\`      |
-| \`npm run build\`           | Build your production site to \`./dist/\`          |
-| \`npm run preview\`         | Preview your build locally, before deploying     |
+| Command              | Action                                       |
+| :------------------- | :------------------------------------------- |
+| \`npm install\`        | Installs dependencies                        |
+| \`node --run dev\`     | Starts local dev server at \`localhost:4567\`  |
+| \`node --run check\`   | Type-check your project sources              |
+| \`node --run build\`   | Build your production site to \`./dist/\`      |
+| \`node --run preview\` | Preview your build locally, before deploying |
 
 ## 🧠 Want to learn more?
 
