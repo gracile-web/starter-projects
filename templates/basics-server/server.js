@@ -10,4 +10,6 @@ app.use(express.static(gracile.getClientDistPath(import.meta.url)));
 
 app.use(gracile.nodeAdapter(handler));
 
-const server = app.listen(3030, () => gracile.printAddressInfos({ server }));
+const server = app.listen(3030, () =>
+	gracile.printAddressInfos(server.address()),
+);

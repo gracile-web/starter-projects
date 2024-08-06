@@ -6,6 +6,7 @@ import { exec, md } from '../utils.js';
 const filesEmojis = {
 	scss: '🟪',
 	css: '🔷',
+	js: '🟨',
 	ts: '🟦',
 	json: '🟠',
 	svg: '🔶',
@@ -17,8 +18,9 @@ export const partials = {
 	readme: async (opt: {
 		name: string;
 		title: string;
-		features?: string;
-		description?: string;
+		features?: string | undefined;
+		description?: string | undefined;
+		tryout?: string | undefined;
 	}) => /* md */ `# Gracile Starter Project: ${opt.title}
 ${opt.description ? `${opt.description}` : ''}
 \`\`\`sh
@@ -52,7 +54,11 @@ ${opt.features}
 ## 🏗️ Project Structure
 
 \`\`\`text
-${(await exec(`tree -F -I 'node_modules|dist|*-lock.yaml' ${opt.name}/`)).stdout
+${(
+	await exec(
+		`tree -F -I 'node_modules|dist|*-lock.yaml' templates/${opt.name}/`,
+	)
+).stdout
 	.split('\n')
 	.slice(1, -3)
 	.join('\n')

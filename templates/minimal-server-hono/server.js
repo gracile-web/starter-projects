@@ -14,11 +14,12 @@ app.get('*', serveStatic({ root: gracile.getClientDistPath(import.meta.url) }));
 app.use((c, next) => {
 	c.set('requestId', crypto.randomUUID());
 	c.set('userEmail', 'admin@admin.home.arpa');
+
 	return next();
 });
 
 app.use(gracile.honoAdapter(handler));
 
-serve({ fetch: app.fetch, port: 3030, hostname: 'localhost' }, (server) =>
-	gracile.printAddressInfos(server),
+serve({ fetch: app.fetch, port: 3030, hostname: 'localhost' }, (address) =>
+	gracile.printAddressInfos(address),
 );
