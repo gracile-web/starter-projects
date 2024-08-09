@@ -8,9 +8,12 @@ export const shellHeader = (options: {
 	currentPath: string;
 }) => html`
 	<header class="shell-header">
-		<a href="/" class="logo">${logo}</a>
+		<div class="menu">
+			<a href="/" class="logo">${logo}</a>
+
+			${shellMenu({ currentPath: options.currentPath })}
+		</div>
 
 		${options.title ? html`<h1>${options.title}</h1>` : null}
-		${shellMenu({ currentPath: options.currentPath })}
 	</header>
 `;
