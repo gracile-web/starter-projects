@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@gracile/gracile": "link:../../../gracile/packages/gracile",
+    "@gracile/gracile": "^0",
     "lit": "^3.1.4",
     "vite": "^5.3.5"
   },

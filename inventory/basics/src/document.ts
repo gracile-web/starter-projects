@@ -1,4 +1,3 @@
-import { helpers } from '@gracile/gracile/document';
 import { html } from '@gracile/gracile/server-html';
 import { createMetadata } from '@gracile/metadata';
 
@@ -10,13 +9,6 @@ export const document = (options: { url: URL; title?: string | null }) => html`
 	<!doctype html>
 	<html lang="en">
 		<head>
-			<!-- Helpers -->
-			${Object.values(helpers.dev)}
-			<!--  -->
-			${helpers.fullHydration}
-			<!--  -->
-			${Object.values(helpers.polyfills)}
-
 			<!-- Global assets -->
 			<link
 				rel="stylesheet"
@@ -26,9 +18,6 @@ export const document = (options: { url: URL; title?: string | null }) => html`
 				type="module"
 				src=${new URL('./document.client.ts', import.meta.url).pathname}
 			></script>
-
-			<!-- Page assets -->
-			${helpers.pageAssets}
 
 			<!-- SEO and page metadata -->
 			${createMetadata({

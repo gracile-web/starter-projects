@@ -6,7 +6,7 @@
     "dev": "vite",
     "check": "tsc",
     "build": "vite build",
-    "preview": "node --watch server.js",
+    "preview": "node --watch -C preview server.js",
     "start": "node server.js"
   },
   "dependencies": {

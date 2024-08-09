@@ -1,7 +1,6 @@
 import { gracile } from '@gracile/gracile/plugin';
 import { viteMarkdownPlugin } from '@gracile/markdown/vite';
 import { MarkdownRenderer } from '@gracile/markdown-preset-marked';
-import { viteSitemapPlugin } from '@gracile/sitemap/vite';
 import { viteSvgPlugin } from '@gracile/svg/vite';
 import { defineConfig } from 'vite';
 
@@ -15,7 +14,8 @@ export default defineConfig({
 	plugins: [
 		gracile({ output: 'server' }),
 		viteSvgPlugin(),
-		viteSitemapPlugin({ siteUrl: SITE_URL }),
 		viteMarkdownPlugin({ MarkdownRenderer }),
 	],
+
+	build: { target: 'esnext' },
 });

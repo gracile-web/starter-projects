@@ -8,9 +8,8 @@ import { defineConfig } from 'vite';
 import { SITE_URL } from './src/constants.js';
 
 export default defineConfig({
-	server: {
-		port: 3030,
-	},
+	server: { port: 3030 },
+	preview: { port: 3030 },
 
 	plugins: [
 		gracile(),
@@ -18,4 +17,6 @@ export default defineConfig({
 		viteSitemapPlugin({ siteUrl: SITE_URL }),
 		viteMarkdownPlugin({ MarkdownRenderer }),
 	],
+
+	build: { target: 'esnext' },
 });

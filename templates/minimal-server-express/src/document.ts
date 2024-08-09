@@ -1,4 +1,3 @@
-import { helpers } from '@gracile/gracile/document';
 import { html } from '@gracile/gracile/server-html';
 
 export const document = (options: { url: URL; title?: string | null }) => html`
@@ -9,13 +8,6 @@ export const document = (options: { url: URL; title?: string | null }) => html`
 			<meta charset="utf-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-			<!-- Helpers -->
-			${Object.values(helpers.dev)}
-			<!--  -->
-			${helpers.fullHydration}
-			<!--  -->
-			${Object.values(helpers.polyfills)}
-
 			<!-- Global assets -->
 			<link
 				rel="stylesheet"
@@ -25,9 +17,6 @@ export const document = (options: { url: URL; title?: string | null }) => html`
 				type="module"
 				src=${new URL('./document.client.ts', import.meta.url).pathname}
 			></script>
-
-			<!-- Page assets -->
-			${helpers.pageAssets}
 
 			<!-- SEO and page metadata -->
 			<title>${options.title}</title>

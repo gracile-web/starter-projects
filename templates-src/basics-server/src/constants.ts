@@ -2,7 +2,7 @@ import type { TreeLevel } from './features/tree.js';
 
 export const SITE_TITLE = 'Gracile Simple Server';
 
-export const DEV_URL = 'http://localhost:4567/';
+export const DEV_URL = 'http://localhost:3030/';
 export const SITE_URL = 'https://example.com/';
 
 export const MENU = [
@@ -12,4 +12,6 @@ export const MENU = [
 	{ path: '/form/with-js/', text: 'Form (+JS)' },
 	{ path: '/json/', text: 'JSON endpoint' },
 	{ path: '/markdown-editor/', text: 'Markdown editor' },
+
+	{ path: '/about/', text: 'About' },
 ] satisfies TreeLevel[];

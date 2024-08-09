@@ -21,8 +21,8 @@ export default defineRoute({
 
 			const myFieldValue = formData.get('my_field')?.toString();
 			if (!myFieldValue) {
-				context.response.status = 400;
-				context.response.statusText = 'Missing field.';
+				context.responseInit.status = 400;
+				context.responseInit.statusText = 'Missing field.';
 			} else {
 				props.success = true;
 				myData = myFieldValue;
@@ -30,7 +30,7 @@ export default defineRoute({
 			}
 
 			if (formData.get('format') === 'json') {
-				return Response.json(props, context.response);
+				return Response.json(props, context.responseInit);
 			}
 			// TIP: No-JS fallback
 			if (props.success) {

@@ -69,12 +69,12 @@ export default defineRoute({
 								coolnessFactor: Number(coolnessFactor),
 							});
 						} else {
-							context.response.status = 400;
-							context.response.statusText = 'Wrong form input.';
+							context.responseInit.status = 400;
+							context.responseInit.statusText = 'Wrong form input.';
 							// IMPORTANT: We want the user data to be repopulated in the page after a failed `POST`.
 							return {
 								success: false,
-								message: context.response.statusText,
+								message: context.responseInit.statusText,
 								achievements: achievementsDb,
 								payload: { name, coolnessFactor },
 							} as const;
@@ -87,11 +87,11 @@ export default defineRoute({
 					break;
 
 				default:
-					context.response.status = 422;
-					context.response.statusText = 'Unknown form action.';
+					context.responseInit.status = 422;
+					context.responseInit.statusText = 'Unknown form action.';
 					return {
 						success: false,
-						message: context.response.statusText,
+						message: context.responseInit.statusText,
 						achievements: achievementsDb,
 					} as const;
 			}
