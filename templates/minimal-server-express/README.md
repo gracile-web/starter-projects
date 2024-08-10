@@ -1,8 +1,18 @@
 # Gracile Starter Project: Minimal server (express)
 
+A Gracile handler, already set up with Express and static file serving.
+
 ```sh
 npm create gracile@latest -t minimal-server-express
 ```
+
+<div align="center">
+
+[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/gracile-web/starter-projects/tree/main/templates/minimal-server-express?embed=1)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/gracile-web/starter-projects/tree/main/templates/minimal-server-express)
+
+</div>
 
 > 🧚 **Already a Gracile pro?** Delete this file. Have fun!
 
@@ -45,6 +55,33 @@ All commands are run from the root of the project, from a terminal:
 | `node --run build`   | Build your production site to `./dist/`      |
 | `node --run preview` | Preview your build locally, before deploying |
 
+## 🛠️ Tooling
+
+Enhance your developer experience with the **Lit Analyzer** toolset and
+**Prettier**.
+
+For syntax highlight, **HTML** and **CSS** MDN references, **custom elements**
+attributes/properties **hints**, **validation** etc., checkout:
+
+The VS Code extension:
+
+```sh
+code --install-extension runem.lit-plugin
+```
+
+Or the [TypeScript Language Server plugin](https://github.com/runem/lit-analyzer/tree/master/packages/ts-lit-plugin#-installation)
+for NeoVim, Zed, etc.
+
+---
+
+For general **formatting**,
+with support for HTML and CSS **template tag literals** in JavaScript:
+
+```sh
+npm i prettier
+```
+
 ## 🧠 Want to learn more?
 
-Check out the [Gracile documentation](https://gracile.js.org) or jump into the [Discord server](https://gracile.js.org/chat/).
+Check out the [Gracile documentation](https://gracile.js.org) or
+jump into the [Discord server](https://gracile.js.org/chat/).

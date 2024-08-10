@@ -107,6 +107,16 @@ export default defineRoute({
 		<main class="shell-content-centered">
 			<h1>Achievements manager</h1>
 
+			<hr />
+			<p>
+				<small
+					>Note that you may have issues with this route that use
+					<code>Response.redirect</code> inside Web Containers environments
+					(StackBlitz, Codesandbox, the Gracile playground…).</small
+				>
+			</p>
+			<hr />
+
 			<form method="post">
 				<input
 					type="hidden"

@@ -7,61 +7,13 @@ import glob from 'fast-glob';
 import { cp, rm } from 'fs/promises';
 
 import { partials } from '../config/partials.js';
+import { templates } from '../config/templates.js';
 // import { dirname } from 'path';
 
 // const watcher = watch(['templates-src','inventory']);
 
 const linkPackages = false;
 const useNext = false;
-
-const templates = [
-	{
-		merge: ['./inventory/basics/**'],
-		name: 'basics-static-blog',
-		title: 'Basics Blog (static)',
-		features: /* md */ `
-- ✅ Minimal styling (make it your own!)
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ Markdown support
-- ✅ SVG support
-- ✅ Server-rendered Lit Elements
-`.trim(),
-		tryout: 'https://gracile-template-basic-blog-static.netlify.app/',
-	},
-	{
-		merge: ['./inventory/basics/**'],
-		name: 'basics-server',
-		title: 'Basics (server)',
-		features: /* md */ `
-- ✅ Minimal styling (make it your own!)
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ Markdown support
-- ✅ SVG support
-- ✅ Server-rendered Lit Elements
-`.trim(),
-		tryout: 'https://gracile-template-basic-blog-static.netlify.app/',
-	},
-	{
-		merge: ['./inventory/minimal/**'],
-		name: 'minimal-static',
-		title: 'Minimal setup (static)',
-		features: undefined,
-	},
-	{
-		merge: ['./inventory/minimal/**'],
-		name: 'minimal-server-express',
-		title: 'Minimal server (express)',
-		features: undefined,
-	},
-	{
-		merge: ['./inventory/minimal/**'],
-		name: 'minimal-server-hono',
-		title: 'Minimal server (hono)',
-		features: undefined,
-	},
-];
 
 // await glob('')
 
