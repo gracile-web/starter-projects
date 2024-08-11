@@ -81,9 +81,12 @@
   },
   "packageManager": "pnpm@9.1.1",
   "dependencies": {
+    "@playwright/test": "^1.46.0",
     "chokidar": "^3.6.0",
     "fast-glob": "^3.3.2",
     "github-slugger": "^2.0.0",
-    "picocolors": "^1.0.1"
+    "latest-version": "^9.0.0",
+    "picocolors": "^1.0.1",
+    "playwright": "^1.46.0"
   }
 }

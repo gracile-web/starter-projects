@@ -1,11 +1,12 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
-import type pjsonType from '@gracile/template--basics-static-blog/package.json';
 // import { watch } from 'chokidar';
 import glob from 'fast-glob';
 import { cp, rm } from 'fs/promises';
+import latestVersion from 'latest-version';
 
+import type pjsonType from '../../templates-src/basics/package.json';
 import { partials } from '../config/partials.js';
 import { templates } from '../config/templates.js';
 // import { dirname } from 'path';
@@ -57,11 +58,16 @@ await Promise.all(
 				await readFile(pjsonDest, 'utf8'),
 			) as unknown as typeof pjsonType;
 			// Object.fromEntries(Object.entries(pjson.dependencies))
-			Object.entries(pjson.dependencies).forEach(([k]) => {
-				if (k.startsWith('@gracile/')) {
-					pjson.dependencies[k] = `${useNext ? 'next' : '^0'}`;
-				}
-			});
+			await Promise.all(
+				Object.entries(pjson.dependencies).map(async ([k]) => {
+					if (k.startsWith('@gracile/')) {
+						const version = await latestVersion(k, {
+							version: useNext ? 'next' : 'latest',
+						});
+						pjson.dependencies[k] = version;
+					}
+				}),
+			);
 
 			await writeFile(pjsonDest, `${JSON.stringify(pjson, null, 2)}\n`);
 		}

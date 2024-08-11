@@ -1,9 +1,10 @@
 export const templates = [
 	{
 		merge: ['./inventory/basics/**'],
-		name: 'basics-static-blog',
-		title: 'Basics - Blog (static)',
-		description: 'Get up and running with a simple blog website.',
+		name: 'basics',
+		title: 'Basics',
+		description:
+			'Get up and running with this all around demo of Gracile features.',
 		features: /* md */ `
 - ✅ Minimal styling (make it your own!)
 - ✅ SEO-friendly with canonical URLs and OpenGraph data
@@ -15,21 +16,21 @@ export const templates = [
 		containers: true,
 		// tryout: 'https://gracile-template-basic-blog-static.netlify.app/',
 	},
-	{
-		merge: ['./inventory/basics/**'],
-		name: 'basics-server',
-		title: 'Basics (server)',
-		description: 'Get up and running with a full-stack project.',
-		features: /* md */ `
-- ✅ Minimal styling (make it your own!)
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Markdown support
-- ✅ SVG support
-- ✅ Server-rendered Lit Elements
-`.trim(),
-		containers: true,
-		// tryout: 'https://gracile-template-basic-blog-static.netlify.app/',
-	},
+	// 	{
+	// 		merge: ['./inventory/basics/**'],
+	// 		name: 'basics-server',
+	// 		title: 'Basics (server)',
+	// 		description: 'Get up and running with a full-stack project.',
+	// 		features: /* md */ `
+	// - ✅ Minimal styling (make it your own!)
+	// - ✅ SEO-friendly with canonical URLs and OpenGraph data
+	// - ✅ Markdown support
+	// - ✅ SVG support
+	// - ✅ Server-rendered Lit Elements
+	// `.trim(),
+	// 		containers: true,
+	// 		// tryout: 'https://gracile-template-basic-blog-static.netlify.app/',
+	// 	},
 	{
 		merge: ['./inventory/minimal/**'],
 		name: 'minimal-static',

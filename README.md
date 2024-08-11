@@ -18,8 +18,7 @@ A thin, full-stack, **web** framework.
 **Starters**:
 
 
-  - [Basics - Blog (static)](#basics---blog-static)
-  - [Basics (server)](#basics-server)
+  - [Basics](#basics)
   - [Minimal setup (static)](#minimal-setup-static)
   - [Minimal server (express)](#minimal-server-express)
   - [Minimal server (hono)](#minimal-server-hono)
@@ -31,10 +30,9 @@ A thin, full-stack, **web** framework.
 
 <div class="card"><div class="card-content">
 
-## Basics - Blog (static)
+## Basics
 
-Get up and running with a simple blog website.
-
+Get up and running with this all around demo of Gracile features.
 
 - ✅ Minimal styling (make it your own!)
 - ✅ SEO-friendly with canonical URLs and OpenGraph data
@@ -44,55 +42,27 @@ Get up and running with a simple blog website.
 - ✅ Server-rendered Lit Elements
 
 ---
+📥 **CLI**:
+
+```sh
+npm create gracile@latest -t basics
+```
 
 <div>
 
-[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/gracile-web/starter-projects/tree/main/templates/basics-static-blog?embed=1)
+[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/gracile-web/starter-projects/tree/main/templates/basics?embed=1)
 &nbsp;&nbsp;&nbsp;&nbsp;
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/gracile-web/starter-projects/tree/main/templates/basics-static-blog)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/gracile-web/starter-projects/tree/main/templates/basics)
 
 </div>
 
-⏬ Download:
+⏬ **Download**:
 
 ```sh
-npx degit gracile-web/starter-projects/templates/basics-static-blog my-project
+npx degit gracile-web/starter-projects/templates/basics my-project
 ```
 
-📑 Sources: [basics-static-blog](https://github.com/gracile-web/starter-projects/tree/main/templates/basics-static-blog)
-
-</div></div>
-
-<div class="card"><div class="card-content">
-
-## Basics (server)
-
-Get up and running with a full-stack project.
-
-
-- ✅ Minimal styling (make it your own!)
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Markdown support
-- ✅ SVG support
-- ✅ Server-rendered Lit Elements
-
----
-
-<div>
-
-[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/gracile-web/starter-projects/tree/main/templates/basics-server?embed=1)
-&nbsp;&nbsp;&nbsp;&nbsp;
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/gracile-web/starter-projects/tree/main/templates/basics-server)
-
-</div>
-
-⏬ Download:
-
-```sh
-npx degit gracile-web/starter-projects/templates/basics-server my-project
-```
-
-📑 Sources: [basics-server](https://github.com/gracile-web/starter-projects/tree/main/templates/basics-server)
+📑 **Sources**: [basics](https://github.com/gracile-web/starter-projects/tree/main/templates/basics)
 
 </div></div>
 
@@ -102,7 +72,11 @@ npx degit gracile-web/starter-projects/templates/basics-server my-project
 
 A statically generated project.
 
+📥 **CLI**:
 
+```sh
+npm create gracile@latest -t minimal-static
+```
 
 <div>
 
@@ -112,13 +86,13 @@ A statically generated project.
 
 </div>
 
-⏬ Download:
+⏬ **Download**:
 
 ```sh
 npx degit gracile-web/starter-projects/templates/minimal-static my-project
 ```
 
-📑 Sources: [minimal-static](https://github.com/gracile-web/starter-projects/tree/main/templates/minimal-static)
+📑 **Sources**: [minimal-static](https://github.com/gracile-web/starter-projects/tree/main/templates/minimal-static)
 
 </div></div>
 
@@ -128,7 +102,11 @@ npx degit gracile-web/starter-projects/templates/minimal-static my-project
 
 A Gracile handler, already set up with Express and static file serving.
 
+📥 **CLI**:
 
+```sh
+npm create gracile@latest -t minimal-server-express
+```
 
 <div>
 
@@ -138,13 +116,13 @@ A Gracile handler, already set up with Express and static file serving.
 
 </div>
 
-⏬ Download:
+⏬ **Download**:
 
 ```sh
 npx degit gracile-web/starter-projects/templates/minimal-server-express my-project
 ```
 
-📑 Sources: [minimal-server-express](https://github.com/gracile-web/starter-projects/tree/main/templates/minimal-server-express)
+📑 **Sources**: [minimal-server-express](https://github.com/gracile-web/starter-projects/tree/main/templates/minimal-server-express)
 
 </div></div>
 
@@ -154,7 +132,11 @@ npx degit gracile-web/starter-projects/templates/minimal-server-express my-proje
 
 A Gracile handler, already set up with Hono and static file serving.
 
+📥 **CLI**:
 
+```sh
+npm create gracile@latest -t minimal-server-hono
+```
 
 <div>
 
@@ -164,13 +146,13 @@ A Gracile handler, already set up with Hono and static file serving.
 
 </div>
 
-⏬ Download:
+⏬ **Download**:
 
 ```sh
 npx degit gracile-web/starter-projects/templates/minimal-server-hono my-project
 ```
 
-📑 Sources: [minimal-server-hono](https://github.com/gracile-web/starter-projects/tree/main/templates/minimal-server-hono)
+📑 **Sources**: [minimal-server-hono](https://github.com/gracile-web/starter-projects/tree/main/templates/minimal-server-hono)
 
 </div></div>
 

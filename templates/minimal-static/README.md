@@ -14,7 +14,11 @@ npm create gracile@latest -t minimal-static
 
 </div>
 
+<div class="git-only">
+
 > 🧚 **Already a Gracile pro?** Delete this file. Have fun!
+
+</div>
 
 ## 🏗️ Project Structure
 

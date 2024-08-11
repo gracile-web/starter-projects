@@ -44,16 +44,20 @@ templates.forEach(async (template) => {
 ## ${template.title}
 
 ${template.description}
-
 ${template.features ? '\n' + template.features + '\n\n---' : ''}
+📥 **CLI**:
+
+\`\`\`sh
+npm create gracile@latest -t ${template.name}
+\`\`\`
 ${containers(template.name, false)}
-⏬ Download:
+⏬ **Download**:
 
 \`\`\`sh
 npx degit gracile-web/starter-projects/templates/${template.name} my-project
 \`\`\`
 
-📑 Sources: [${template.name}](https://github.com/gracile-web/starter-projects/tree/main/templates/${template.name})
+📑 **Sources**: [${template.name}](https://github.com/gracile-web/starter-projects/tree/main/templates/${template.name})
 
 </div></div>
 `;

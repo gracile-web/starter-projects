@@ -49,7 +49,11 @@ ${opt.features}
 `
 		: ''
 }${opt.containers ? containers(opt.name) : ''}
+<div class="git-only">
+
 > 🧚 **Already a Gracile pro?** Delete this file. Have fun!
+
+</div>
 
 ## 🏗️ Project Structure
 
