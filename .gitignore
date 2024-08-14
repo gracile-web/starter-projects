@@ -42,3 +42,5 @@ pnpm-lock.yaml
 
 playwright-report
 test-results
+
+*-snapshots
