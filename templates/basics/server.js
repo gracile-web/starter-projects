@@ -18,7 +18,7 @@ app.use((c, next) => {
 
 app.use(gracile.honoAdapter(handler));
 
-serve(
-	{ fetch: app.fetch, port: 3030, hostname: gracile.LOCALHOST },
+export const server = serve(
+	{ fetch: app.fetch, port: 3030, hostname: gracile.server.LOCALHOST },
 	(address) => gracile.printAddressInfos(address),
 );

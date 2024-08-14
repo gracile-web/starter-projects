@@ -10,12 +10,12 @@ app.use(express.static(gracile.getClientDistPath(import.meta.url)));
 
 app.use((req, res, next) => {
 	res.locals.requestId = crypto.randomUUID();
-	res.locals.userEmail = req.get('x-forwarded-email') || null;
+	res.locals.userEmail = req.get('x-forwarded-email') || 'null@0.home.arpa';
 	return next();
 });
 
 app.use(gracile.nodeAdapter(handler));
 
-const server = app.listen(3030, () =>
+export const server = app.listen(3030, () =>
 	gracile.printAddressInfos(server.address()),
 );

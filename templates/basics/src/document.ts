@@ -22,7 +22,7 @@ export const document = (options: { url: URL; title?: string | null }) => html`
 			<!-- SEO and page metadata -->
 			${createMetadata({
 				siteTitle: SITE_TITLE,
-				pageTitle: options.title ?? SITE_TITLE,
+				pageTitle: `${options.title ? `${options.title} - ` : ''}${SITE_TITLE}`,
 				author: 'Myself',
 			})}
 		</head>

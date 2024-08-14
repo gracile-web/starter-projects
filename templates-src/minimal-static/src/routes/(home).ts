@@ -8,8 +8,10 @@ import { document } from '../document.js';
 export default defineRoute({
 	document: (context) => document({ ...context, title: 'Gracile - Home' }),
 
-	template: (_context) => html`
+	template: (context) => html`
 		<h1><img src="/favicon.svg" height="25" /> - Hello Gracile</h1>
+
+		<h2>${context.url}</h2>
 
 		<dl>
 			<dt>Gracile</dt>

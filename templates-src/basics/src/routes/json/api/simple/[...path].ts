@@ -17,8 +17,8 @@ export default defineRoute({
 	handler: (context) => {
 		if (context.request.method !== 'GET')
 			return Response.json(
-				{ success: false },
-				{ status: 405, statusText: `Only "GET" is allowed.` },
+				{ success: false, message: `Only "GET" is allowed.` },
+				{ status: 405 },
 			);
 
 		const result = petStorePattern.exec(context.url);
@@ -31,17 +31,17 @@ export default defineRoute({
 			if (foundPet) return Response.json({ success: true, data: foundPet });
 
 			return Response.json(
-				{ success: false },
-				{ status: 404, statusText: `Pet "${id}" not found!` },
+				{ success: false, message: `Pet "${id}" not found!` },
+				{ status: 404 },
 			);
 		}
 
 		return Response.json(
-			{ success: false },
 			{
-				status: 400,
-				statusText: `Unknown API route for "${context.url.href}"`,
+				success: false,
+				message: `Unknown API route for "${context.url.href}"`,
 			},
+			{ status: 400 },
 		);
 	},
 });

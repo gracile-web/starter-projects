@@ -2,7 +2,7 @@
 
 <div class="git-only">
 
-*Gracile*.  
+_Gracile_.  
 A thin, full-stack, **web** framework.
 
 **Features**:
@@ -17,16 +17,14 @@ A thin, full-stack, **web** framework.
 
 **Starters**:
 
-
-  - [Basics](#basics)
-  - [Minimal setup (static)](#minimal-setup-static)
-  - [Minimal server (express)](#minimal-server-express)
-  - [Minimal server (hono)](#minimal-server-hono)
+- [Basics](#basics)
+- [Minimal setup (static)](#minimal-setup-static)
+- [Minimal server (express)](#minimal-server-express)
+- [Minimal server (hono)](#minimal-server-hono)
 
 </div>
 
 <section class="cards">
-
 
 <div class="card"><div class="card-content">
 
@@ -42,6 +40,7 @@ Get up and running with this all around demo of Gracile features.
 - ✅ Server-rendered Lit Elements
 
 ---
+
 📥 **CLI**:
 
 ```sh
@@ -71,6 +70,7 @@ npx degit gracile-web/starter-projects/templates/basics my-project
 ## Minimal setup (static)
 
 A statically generated project.
+
 
 📥 **CLI**:
 
@@ -102,6 +102,7 @@ npx degit gracile-web/starter-projects/templates/minimal-static my-project
 
 A Gracile handler, already set up with Express and static file serving.
 
+
 📥 **CLI**:
 
 ```sh
@@ -131,6 +132,7 @@ npx degit gracile-web/starter-projects/templates/minimal-server-express my-proje
 ## Minimal server (hono)
 
 A Gracile handler, already set up with Hono and static file serving.
+
 
 📥 **CLI**:
 

@@ -92,10 +92,15 @@ Features:
 │   │   │   └─ 📂 api/
 │   │   │       └─ 📂 simple/
 │   │   │           └─ 🟦 [...path].ts
-│   │   └─ 📂 markdown-editor/
-│   │       ├─ 🟦 (editor).client.ts
-│   │       ├─ 🟦 (editor).ts
-│   │       └─ 🟦 markdown-api.ts
+│   │   ├─ 📂 markdown-editor/
+│   │   │   ├─ 🟦 (editor).client.ts
+│   │   │   ├─ 🟦 (editor).ts
+│   │   │   └─ 🟦 markdown-api.ts
+│   │   └─ 📂 streams/
+│   │       ├─ 🟦 (streams).client.ts
+│   │       ├─ 🟦 (streams).ts
+│   │       └─ 📂 server-events/
+│   │           └─ 🟦 (server-events).ts
 │   └─ 🟪 tokens.scss
 ├─ 🟠 tsconfig.json
 └─ 🟦 vite.config.ts

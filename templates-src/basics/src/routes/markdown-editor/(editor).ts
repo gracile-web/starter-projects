@@ -38,8 +38,7 @@ This one is server rendered and hydrated!
 `;
 
 export default defineRoute({
-	document: (context) =>
-		document({ ...context, title: 'Gracile - Markdown editor' }),
+	document: (context) => document({ ...context, title: 'Markdown editor' }),
 
 	template: () => html`
 		<main>

@@ -1,6 +1,6 @@
 import type { TreeLevel } from './features/tree.js';
 
-export const SITE_TITLE = 'Gracile Simple Server';
+export const SITE_TITLE = 'Gracile Basics';
 
 export const DEV_URL = 'http://localhost:3030/';
 export const SITE_URL = 'https://example.com/';
@@ -14,6 +14,7 @@ export const MENU = [
 
 	{ path: '/markdown-editor/', text: 'Markdown editor' },
 
+	{ path: '/streams/', text: 'Streams' },
 	{ path: '/blog/', text: 'Blog' },
 
 	{ path: '/about/', text: 'About' },

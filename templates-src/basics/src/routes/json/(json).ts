@@ -6,7 +6,7 @@ import { document } from '../../document.js';
 
 export default defineRoute({
 	document: (context) =>
-		document({ ...context, title: 'Gracile - JSON endpoint with routing' }),
+		document({ ...context, title: 'JSON endpoint with routing' }),
 
 	template: () => html`
 		<main class="shell-content-centered">

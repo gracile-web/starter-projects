@@ -6,3 +6,6 @@ declare namespace Gracile {
 		userEmail: string | null;
 	}
 }
+declare namespace Express {
+	interface Locals extends Gracile.Locals {}
+}

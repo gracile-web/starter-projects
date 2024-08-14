@@ -35,9 +35,7 @@ customElements.define(
 
 				console.log({ response, json });
 
-				this.#dump.innerHTML = `${response.status} - ${
-					response.statusText
-				} - ${JSON.stringify(json, null, 2)}`;
+				this.#dump.innerHTML = `${response.status} - ${JSON.stringify(json, null, 2)}`;
 			}
 		}
 	},

@@ -9,7 +9,7 @@ let readme = `# 🎇 Starter projects
 
 <div class="git-only">
 
-*Gracile*.  
+_Gracile_.  
 A thin, full-stack, **web** framework.
 
 **Features**:
@@ -23,18 +23,16 @@ A thin, full-stack, **web** framework.
 ---
 
 **Starters**:
-
 ${templates
 	.map((template) => {
 		return `
-  - [${template.title}](#${slug(template.title)})`;
+- [${template.title}](#${slug(template.title)})`;
 	})
 	.join('')}
 
 </div>
 
 <section class="cards">
-
 `;
 
 templates.forEach(async (template) => {
@@ -45,6 +43,7 @@ templates.forEach(async (template) => {
 
 ${template.description}
 ${template.features ? '\n' + template.features + '\n\n---' : ''}
+
 📥 **CLI**:
 
 \`\`\`sh

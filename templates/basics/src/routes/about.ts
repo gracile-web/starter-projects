@@ -7,7 +7,7 @@ import aboutText from '../content/about.md';
 import { document } from '../document.js';
 
 export default defineRoute({
-	document: (context) => document({ ...context, title: 'Gracile - About' }),
+	document: (context) => document({ ...context, title: 'About' }),
 
 	template: () => html`
 		<!--  -->

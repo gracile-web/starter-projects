@@ -70,11 +70,10 @@ export default defineRoute({
 							});
 						} else {
 							context.responseInit.status = 400;
-							context.responseInit.statusText = 'Wrong form input.';
 							// IMPORTANT: We want the user data to be repopulated in the page after a failed `POST`.
 							return {
 								success: false,
-								message: context.responseInit.statusText,
+								message: 'Wrong form input.',
 								achievements: achievementsDb,
 								payload: { name, coolnessFactor },
 							} as const;
@@ -88,10 +87,9 @@ export default defineRoute({
 
 				default:
 					context.responseInit.status = 422;
-					context.responseInit.statusText = 'Unknown form action.';
 					return {
 						success: false,
-						message: context.responseInit.statusText,
+						message: 'Unknown form action.',
 						achievements: achievementsDb,
 					} as const;
 			}
@@ -101,7 +99,7 @@ export default defineRoute({
 		},
 	},
 
-	document: (context) => document(context),
+	document: (context) => document({ ...context, title: 'Form without JS' }),
 
 	template: (context) => html`
 		<main class="shell-content-centered">
