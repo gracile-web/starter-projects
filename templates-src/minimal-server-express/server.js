@@ -17,5 +17,5 @@ app.use((req, res, next) => {
 app.use(gracile.nodeAdapter(handler));
 
 export const server = app.listen(3030, () =>
-	gracile.printAddressInfos(server.address()),
+	gracile.printUrls(server.address()),
 );
