@@ -1,6 +1,6 @@
 import { html } from '@gracile/gracile/server-html';
 
-export const document = (options: { url: URL; title?: string | null }) => html`
+export const document = (props: { url: URL; title?: string | null }) => html`
 	<!doctype html>
 	<html lang="en">
 		<head>
@@ -19,7 +19,7 @@ export const document = (options: { url: URL; title?: string | null }) => html`
 			></script>
 
 			<!-- SEO and page metadata -->
-			<title>${options.title}</title>
+			<title>${props.title}</title>
 			<link type="image/svg+xml" href="/favicon.svg" rel="icon" />
 		</head>
 
