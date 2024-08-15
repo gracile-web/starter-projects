@@ -19,6 +19,7 @@ A thin, full-stack, **web** framework.
 
 - [Basics](#basics)
 - [Minimal setup (static)](#minimal-setup-static)
+- [Minimal setup (Bootstrap/Tailwind)](#minimal-setup-bootstraptailwind)
 - [Minimal server (express)](#minimal-server-express)
 - [Minimal server (hono)](#minimal-server-hono)
 
@@ -93,6 +94,37 @@ npx degit gracile-web/starter-projects/templates/minimal-static my-project
 ```
 
 📑 **Sources**: [minimal-static](https://github.com/gracile-web/starter-projects/tree/main/templates/minimal-static)
+
+</div></div>
+
+<div class="card"><div class="card-content">
+
+## Minimal setup (Bootstrap/Tailwind)
+
+A project with popular vendors CSS preconfigured.
+
+
+📥 **CLI**:
+
+```sh
+npm create gracile@latest -t minimal-bootstrap-tailwind
+```
+
+<div>
+
+[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/gracile-web/starter-projects/tree/main/templates/minimal-bootstrap-tailwind?embed=1)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/gracile-web/starter-projects/tree/main/templates/minimal-bootstrap-tailwind)
+
+</div>
+
+⏬ **Download**:
+
+```sh
+npx degit gracile-web/starter-projects/templates/minimal-bootstrap-tailwind my-project
+```
+
+📑 **Sources**: [minimal-bootstrap-tailwind](https://github.com/gracile-web/starter-projects/tree/main/templates/minimal-bootstrap-tailwind)
 
 </div></div>
 

@@ -5,7 +5,7 @@ import { SITE_TITLE } from './constants.js';
 import { shellFooter } from './features/shell/footer.js';
 import { shellHeader } from './features/shell/header.js';
 
-export const document = (props: { url: URL; title?: string | null }) => html`
+export const document = (options: { url: URL; title?: string | null }) => html`
 	<!doctype html>
 	<html lang="en">
 		<head>
@@ -22,15 +22,15 @@ export const document = (props: { url: URL; title?: string | null }) => html`
 			<!-- SEO and page metadata -->
 			${createMetadata({
 				siteTitle: SITE_TITLE,
-				pageTitle: `${props.title ? `${props.title} - ` : ''}${SITE_TITLE}`,
+				pageTitle: `${options.title ? `${options.title} - ` : ''}${SITE_TITLE}`,
 				author: 'Myself',
 			})}
 		</head>
 
 		<body>
 			${shellHeader({
-				title: props.title === undefined ? SITE_TITLE : props.title,
-				currentPath: props.url.pathname,
+				title: options.title === undefined ? SITE_TITLE : options.title,
+				currentPath: options.url.pathname,
 			})}
 
 			<route-template-outlet></route-template-outlet>

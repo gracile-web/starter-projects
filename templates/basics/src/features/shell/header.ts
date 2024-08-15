@@ -3,7 +3,7 @@ import { html } from 'lit';
 import logo from '../../assets/gracile-logo.svg';
 import { shellMenu } from './menu.js';
 
-export const shellHeader = (props: {
+export const shellHeader = (options: {
 	title: string | null;
 	currentPath: string;
 }) => html`
@@ -11,9 +11,9 @@ export const shellHeader = (props: {
 		<div class="menu">
 			<a href="/" class="logo">${logo}</a>
 
-			${shellMenu({ currentPath: props.currentPath })}
+			${shellMenu({ currentPath: options.currentPath })}
 		</div>
 
-		${props.title ? html`<h1>${props.title}</h1>` : null}
+		${options.title ? html`<h1>${options.title}</h1>` : null}
 	</header>
 `;

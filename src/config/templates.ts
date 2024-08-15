@@ -32,10 +32,27 @@ export const templates = [
 	// 	// 		// tryout: 'https://gracile-template-basic-blog-static.netlify.app/',
 	// 	// 	},
 	{
-		merge: ['inventory/minimal', 'templates-src/minimal-static'],
+		merge: [
+			//
+			'inventory/minimal',
+			'inventory/minimal-static',
+			'templates-src/minimal-static',
+		],
 		name: 'minimal-static',
 		title: 'Minimal setup (static)',
 		description: 'A statically generated project.',
+		containers: true,
+	},
+	{
+		merge: [
+			//
+			'inventory/minimal',
+			'inventory/minimal-static',
+			'templates-src/minimal-bootstrap-tailwind',
+		],
+		name: 'minimal-bootstrap-tailwind',
+		title: 'Minimal setup (Bootstrap/Tailwind)',
+		description: 'A project with popular vendors CSS preconfigured.',
 		containers: true,
 	},
 	{
