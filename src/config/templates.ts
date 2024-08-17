@@ -57,6 +57,18 @@ export const templates = [
 	},
 	{
 		merge: [
+			//
+			'inventory/minimal',
+			'inventory/minimal-static',
+			'templates-src/minimal-minification',
+		],
+		name: 'minimal-minification',
+		title: 'Minimal setup (HTML/CSS minification)',
+		description: 'Static/server and dev/build with minified CSS+HTML.',
+		containers: true,
+	},
+	{
+		merge: [
 			'inventory/minimal',
 			'inventory/minimal-server',
 			'templates-src/minimal-server-express',

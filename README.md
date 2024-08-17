@@ -20,6 +20,7 @@ A thin, full-stack, **web** framework.
 - [Basics](#basics)
 - [Minimal setup (static)](#minimal-setup-static)
 - [Minimal setup (Bootstrap/Tailwind)](#minimal-setup-bootstraptailwind)
+- [Minimal setup (HTML/CSS minification)](#minimal-setup-htmlcss-minification)
 - [Minimal server (express)](#minimal-server-express)
 - [Minimal server (hono)](#minimal-server-hono)
 
@@ -125,6 +126,37 @@ npx degit gracile-web/starter-projects/templates/minimal-bootstrap-tailwind my-p
 ```
 
 📑 **Sources**: [minimal-bootstrap-tailwind](https://github.com/gracile-web/starter-projects/tree/main/templates/minimal-bootstrap-tailwind)
+
+</div></div>
+
+<div class="card"><div class="card-content">
+
+## Minimal setup (HTML/CSS minification)
+
+Static/server and dev/build with minified CSS+HTML.
+
+
+📥 **CLI**:
+
+```sh
+npm create gracile@latest -t minimal-minification
+```
+
+<div>
+
+[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/gracile-web/starter-projects/tree/main/templates/minimal-minification?embed=1)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/gracile-web/starter-projects/tree/main/templates/minimal-minification)
+
+</div>
+
+⏬ **Download**:
+
+```sh
+npx degit gracile-web/starter-projects/templates/minimal-minification my-project
+```
+
+📑 **Sources**: [minimal-minification](https://github.com/gracile-web/starter-projects/tree/main/templates/minimal-minification)
 
 </div></div>
 
