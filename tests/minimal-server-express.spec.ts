@@ -1,4 +1,16 @@
-import { test, expect } from '@playwright/test';
+// NOTE: This works, we use this because the playwright one is not what want.
+import { after, before } from 'node:test';
+
+import { expect, test } from '@playwright/test';
+import type { ViteDevServer } from 'vite';
+
+// import { createViteTestServer } from './_suite/utils.js';
+
+let server: ViteDevServer;
+
+before(async () => {
+	// server = await createViteTestServer(import.meta.url);
+});
 
 test('minimal-server screenshots', async ({ page }) => {
 	await page.goto('http://localhost:3030');
@@ -23,6 +35,8 @@ test('minimal-server screenshots', async ({ page }) => {
 		'A GET! http://localhost:3030/api/',
 	);
 
+	after(() => server.close());
+
 	await page.goto('http://localhost:3030/api/sub-route/');
 	expect(await page.textContent('body')).toBe(
 		'A GET! http://localhost:3030/api/sub-route/',
@@ -46,3 +60,5 @@ test('routing works', async ({ page }) => {
 
 	await page.getByText('About page').click();
 });
+
+// after(() => server.close());

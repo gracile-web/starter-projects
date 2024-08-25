@@ -3,6 +3,9 @@
 singleQuote: true
 useTabs: true
 
+# TODO: try
+# htmlWhitespaceSensitivity: ignore
+
 overrides:
   - files: ['*.md', '*.yaml', '*.json', '.*rc*']
     options:

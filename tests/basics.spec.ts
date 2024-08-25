@@ -1,4 +1,14 @@
-import { test, expect } from '@playwright/test';
+import { after, before } from 'node:test';
+
+import { expect, test } from '@playwright/test';
+
+import { createTestServer } from './_suite/utils.js';
+
+let server: Awaited<ReturnType<typeof createTestServer>>;
+
+before(async () => {
+	server = await createTestServer(import.meta.url);
+});
 
 const scOptions = { fullPage: true };
 
@@ -119,8 +129,8 @@ test('basics - interactions - form + js', async ({ page }) => {
 	await page.getByText('Change field value').click();
 	await expect(page.locator('pre')).toContainText(`{
   "success": true,
-  "myData": "untouched",
-  "message": null
+  "message": null,
+  "myData": "untouched"
 }`);
 });
 
@@ -149,3 +159,5 @@ test('basics - interactions - json endpoint', async ({ page }) => {
   "message": "Only \\"GET\\" is allowed."
 }`);
 });
+
+after(() => server.close());
