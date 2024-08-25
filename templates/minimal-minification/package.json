@@ -7,12 +7,12 @@
     "check": "tsc",
     "build": "vite build",
     "build:static": "DEMO_MODE=static vite build",
-    "preview": "node --watch -C preview server.js",
+    "preview": "node -C preview --watch server.js",
     "preview:static": "vite preview",
     "start": "node server.js"
   },
   "dependencies": {
-    "@gracile/gracile": "0.6.0-next.0",
+    "@gracile/gracile": "0.7.0-next.1",
     "@hono/node-server": "^1.12.0",
     "hono": "^4.5.3",
     "lit": "^3.1.4",

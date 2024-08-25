@@ -59,12 +59,55 @@ export const templates = [
 		merge: [
 			//
 			'inventory/minimal',
+			'inventory/minimal-server',
+			'templates-src/minimal-testing',
+		],
+		name: 'minimal-testing',
+		title: 'Minimal setup with various kinds of test suites.',
+		description: 'Browser (Playwright), Unit tests (Node).',
+		containers: true,
+
+		features: `**Available commands**
+
+\`\`\`sh
+test:unit
+test:unit:dev
+
+test:integration
+test:integration:dev
+
+test:component
+test:component:dev
+
+test:e2e
+test:e2e:dev
+
+test:all
+\`\`\`
+    `,
+	},
+	{
+		merge: [
+			//
+			'inventory/minimal',
 			'inventory/minimal-static',
 			'templates-src/minimal-minification',
 		],
 		name: 'minimal-minification',
 		title: 'Minimal setup (HTML/CSS minification)',
 		description: 'Static/server and dev/build with minified CSS+HTML.',
+		containers: true,
+	},
+	{
+		merge: [
+			//
+			'inventory/minimal',
+			// 'inventory/minimal-static',
+			'templates-src/minimal-client-routing',
+		],
+		name: 'minimal-client-routing',
+		title: 'Minimal setup for client routing (SPA)',
+		description: 'Client-side routing demo, with hydration, for any mode.',
 		containers: true,
 	},
 	{

@@ -1,3 +1,5 @@
+import '../features/my-greetings.js';
+
 import { defineRoute } from '@gracile/gracile/route';
 import { html } from '@gracile/gracile/server-html';
 

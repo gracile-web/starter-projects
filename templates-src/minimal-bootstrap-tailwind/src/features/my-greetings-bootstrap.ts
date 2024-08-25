@@ -8,7 +8,7 @@ export class MyGreetingsBootstrap extends LitElement {
 	async firstUpdated() {
 		setInterval(() => {
 			this.name = this.name === 'Gracile' ? 'World' : 'Gracile';
-		}, 1500);
+		}, 2500);
 
 		if (!isServer) {
 			const { Dropdown } = await import('bootstrap');

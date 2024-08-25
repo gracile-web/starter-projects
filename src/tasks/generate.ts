@@ -24,15 +24,15 @@ const e = promisify(exec);
 await Promise.all(
 	// MARK: COPY/MERGE
 	[...templates].map(async (template) => {
-		await Promise.all(
-			['inventory/__common', ...template.merge].map(async (merge) => {
-				console.log(
-					await e(
-						`rsync -av ${merge}/ templates/${template.name} --exclude="node_modules"`,
-					),
-				);
-			}),
-		);
+		// eslint-disable-next-line no-restricted-syntax
+		for (const merge of ['inventory/__common', ...template.merge]) {
+			console.log(
+				// eslint-disable-next-line no-await-in-loop
+				await e(
+					`rsync -av ${merge}/ templates/${template.name} --exclude="node_modules"`,
+				),
+			);
+		}
 
 		// MARK: README
 		const rdme = join(process.cwd(), 'templates', template.name, 'README.md');

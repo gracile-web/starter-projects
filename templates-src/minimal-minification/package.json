@@ -7,7 +7,7 @@
     "check": "tsc",
     "build": "vite build",
     "build:static": "DEMO_MODE=static vite build",
-    "preview": "node --watch -C preview server.js",
+    "preview": "node -C preview --watch server.js",
     "preview:static": "vite preview",
     "start": "node server.js"
   },

@@ -2,7 +2,7 @@ import { html } from 'lit';
 
 export const mainCard = html`
 	<h2>
-		Get started with your <em><strong>Basics - Server</strong> template</em>
+		Get started with the <em><strong>Basics Tour</strong> template</em>
 	</h2>
 
 	<ol>

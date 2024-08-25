@@ -6,11 +6,11 @@
     "dev": "vite",
     "check": "tsc",
     "build": "vite build",
-    "preview": "node --watch -C preview server.js",
+    "preview": "node -C preview --watch server.js",
     "start": "node server.js"
   },
   "dependencies": {
-    "@gracile/gracile": "0.6.0-next.0",
+    "@gracile/gracile": "0.7.0-next.1",
     "lit": "^3.1.4",
     "vite": "^5.3.5",
     "express": "4.19.2"

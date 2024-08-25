@@ -6,7 +6,7 @@ import { html } from '@gracile/gracile/server-html';
 import { document } from '../../document.js';
 
 export default defineRoute({
-	document: (context) => document({ ...context, title: 'Gracile - Tailwind' }),
+	document: (context) => document({ ...context, title: 'Gracile - Bootstrap' }),
 
 	template: () => html`
 		<h1 class="">Bootstrap Demo</h1>

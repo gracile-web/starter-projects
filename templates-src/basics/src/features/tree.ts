@@ -33,12 +33,10 @@ const recurse = (
 	</ul>
 `;
 
-export const tree = (options: {
+export const tree = (props: {
 	currentPath?: string;
 	tree: TreeLevel[] | undefined;
 }) =>
-	options.tree
-		? html`
-				<nav class="tree">${recurse(options.tree, options.currentPath)}</nav>
-			`
+	props.tree
+		? html` <nav class="tree">${recurse(props.tree, props.currentPath)}</nav> `
 		: null;

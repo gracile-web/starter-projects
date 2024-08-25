@@ -13,7 +13,7 @@ export class MyGreetingsTailwind extends LitElement {
 	firstUpdated(): void {
 		setInterval(() => {
 			this.name = this.name === 'Gracile' ? 'World' : 'Gracile';
-		}, 1500);
+		}, 2500);
 	}
 
 	render() {
