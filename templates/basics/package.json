@@ -10,7 +10,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "@gracile/gracile": "0.7.0",
+    "@gracile/gracile": "0.7.1",
     "@gracile/markdown": "0.2.0",
     "@gracile/markdown-preset-marked": "0.0.12",
     "@gracile/metadata": "0.1.0",
