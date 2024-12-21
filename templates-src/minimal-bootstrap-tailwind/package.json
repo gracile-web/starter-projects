@@ -12,8 +12,8 @@
     "@gracile/gracile": "link:../../../gracile/packages/gracile",
     "@gracile-labs/css-helpers": "link:../../../gracile/packages/labs/css-helpers",
     "bootstrap": "^5.3.3",
-    "lit": "^3.1.4",
-    "vite": "^5.3.5"
+    "lit": "^3.2.1",
+    "vite": "^6.0.5"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.14",

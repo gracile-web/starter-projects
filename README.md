@@ -20,13 +20,15 @@ A thin, full-stack, **web** framework.
 - [Basics](#basics)
 - [Minimal setup (static)](#minimal-setup-static)
 - [Minimal setup (Bootstrap/Tailwind)](#minimal-setup-bootstraptailwind)
+- [Minimal setup with various kinds of test suites.](#minimal-setup-with-various-kinds-of-test-suites)
 - [Minimal setup (HTML/CSS minification)](#minimal-setup-htmlcss-minification)
-- [Minimal server (express)](#minimal-server-express)
-- [Minimal server (hono)](#minimal-server-hono)
+- [Minimal setup for client routing (SPA)](#minimal-setup-for-client-routing-spa)
+- [Minimal server (Express)](#minimal-server-express)
+- [Minimal server (Hono)](#minimal-server-hono)
 
 </div>
 
-<section class="cards">
+<section class="cards tiles">
 
 <div class="card"><div class="card-content">
 
@@ -131,6 +133,57 @@ npx degit gracile-web/starter-projects/templates/minimal-bootstrap-tailwind my-p
 
 <div class="card"><div class="card-content">
 
+## Minimal setup with various kinds of test suites.
+
+Browser (Playwright), Unit tests (Node).
+
+**Available commands**
+
+```sh
+test:unit
+test:unit:dev
+
+test:integration
+test:integration:dev
+
+test:component
+test:component:dev
+
+test:e2e
+test:e2e:dev
+
+test:all
+```
+    
+
+---
+
+📥 **CLI**:
+
+```sh
+npm create gracile@latest -t minimal-testing
+```
+
+<div>
+
+[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/gracile-web/starter-projects/tree/main/templates/minimal-testing?embed=1)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/gracile-web/starter-projects/tree/main/templates/minimal-testing)
+
+</div>
+
+⏬ **Download**:
+
+```sh
+npx degit gracile-web/starter-projects/templates/minimal-testing my-project
+```
+
+📑 **Sources**: [minimal-testing](https://github.com/gracile-web/starter-projects/tree/main/templates/minimal-testing)
+
+</div></div>
+
+<div class="card"><div class="card-content">
+
 ## Minimal setup (HTML/CSS minification)
 
 Static/server and dev/build with minified CSS+HTML.
@@ -162,7 +215,38 @@ npx degit gracile-web/starter-projects/templates/minimal-minification my-project
 
 <div class="card"><div class="card-content">
 
-## Minimal server (express)
+## Minimal setup for client routing (SPA)
+
+Client-side routing demo, with hydration, for any mode.
+
+
+📥 **CLI**:
+
+```sh
+npm create gracile@latest -t minimal-client-routing
+```
+
+<div>
+
+[![Edit in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/gracile-web/starter-projects/tree/main/templates/minimal-client-routing?embed=1)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/gracile-web/starter-projects/tree/main/templates/minimal-client-routing)
+
+</div>
+
+⏬ **Download**:
+
+```sh
+npx degit gracile-web/starter-projects/templates/minimal-client-routing my-project
+```
+
+📑 **Sources**: [minimal-client-routing](https://github.com/gracile-web/starter-projects/tree/main/templates/minimal-client-routing)
+
+</div></div>
+
+<div class="card"><div class="card-content">
+
+## Minimal server (Express)
 
 A Gracile handler, already set up with Express and static file serving.
 
@@ -193,7 +277,7 @@ npx degit gracile-web/starter-projects/templates/minimal-server-express my-proje
 
 <div class="card"><div class="card-content">
 
-## Minimal server (hono)
+## Minimal server (Hono)
 
 A Gracile handler, already set up with Hono and static file serving.
 

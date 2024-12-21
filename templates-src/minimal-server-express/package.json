@@ -11,13 +11,13 @@
   },
   "dependencies": {
     "@gracile/gracile": "link:../../../gracile/packages/gracile",
-    "lit": "^3.1.4",
-    "vite": "^5.3.5",
-    "express": "4.19.2"
+    "lit": "^3.2.1",
+    "vite": "^6.0.5",
+    "express": "^5.0.1"
   },
   "devDependencies": {
     "@types/node": "^22.1.0",
     "typescript": "^5.5.4",
-    "@types/express": "^4.17.21"
+    "@types/express": "^5.0.0"
   }
 }

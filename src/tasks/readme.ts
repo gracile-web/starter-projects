@@ -32,7 +32,7 @@ ${templates
 
 </div>
 
-<section class="cards">
+<section class="cards tiles">
 `;
 
 templates.forEach(async (template) => {

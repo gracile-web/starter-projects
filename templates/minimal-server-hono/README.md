@@ -1,4 +1,4 @@
-# Gracile Starter Project: Minimal server (hono)
+# Gracile Starter Project: Minimal server (Hono)
 
 A Gracile handler, already set up with Hono and static file serving.
 

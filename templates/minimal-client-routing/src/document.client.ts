@@ -1,5 +1,5 @@
-import { createRouter } from '@gracile-labs/client-router/router';
+import { createRouter } from '@gracile-labs/client-router/create';
 
-const router = await createRouter();
+const router = createRouter();
 
 console.log({ router });

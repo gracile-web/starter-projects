@@ -117,7 +117,7 @@ test:all
 			'templates-src/minimal-server-express',
 		],
 		name: 'minimal-server-express',
-		title: 'Minimal server (express)',
+		title: 'Minimal server (Express)',
 		description:
 			'A Gracile handler, already set up with Express and static file serving.',
 		containers: true,
@@ -129,7 +129,7 @@ test:all
 			'templates-src/minimal-server-hono',
 		],
 		name: 'minimal-server-hono',
-		title: 'Minimal server (hono)',
+		title: 'Minimal server (Hono)',
 		description:
 			'A Gracile handler, already set up with Hono and static file serving.',
 		containers: true,

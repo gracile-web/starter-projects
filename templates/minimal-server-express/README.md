@@ -1,4 +1,4 @@
-# Gracile Starter Project: Minimal server (express)
+# Gracile Starter Project: Minimal server (Express)
 
 A Gracile handler, already set up with Express and static file serving.
 
