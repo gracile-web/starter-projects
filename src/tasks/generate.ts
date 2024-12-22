@@ -16,7 +16,7 @@ import { templates } from '../config/templates.js';
 // const watcher = watch(['templates-src','inventory']);
 
 const linkPackages = false;
-const useNext = true;
+const useNext = false;
 
 // await glob('')
 const e = promisify(exec);
