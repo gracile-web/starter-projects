@@ -16,7 +16,7 @@ import { templates } from '../config/templates.js';
 // const watcher = watch(['templates-src','inventory']);
 
 const linkPackages = false;
-const useNext = false;
+const useNext = true;
 
 // await glob('')
 const e = promisify(exec);
@@ -52,11 +52,16 @@ await Promise.all(
 			// Object.fromEntries(Object.entries(pjson.dependencies))
 			await Promise.all(
 				Object.entries(pjson.dependencies).map(async ([k]) => {
-					if (k.startsWith('@gracile/')) {
-						const version = await latestVersion(k, {
-							version: useNext ? 'next' : 'latest',
-						});
-						pjson.dependencies[k as keyof typeof pjson.dependencies] = version;
+					if (k.startsWith('@gracile/') || k.startsWith('@gracile-labs/')) {
+						try {
+							const version = await latestVersion(k, {
+								version: useNext ? 'next' : 'latest',
+							});
+							pjson.dependencies[k as keyof typeof pjson.dependencies] =
+								version;
+						} catch (error) {
+							console.error(error);
+						}
 					}
 				}),
 			);
