@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@gracile/gracile": "0.8.2-next.0",
-    "@gracile-labs/css-helpers": "0.1.1-next.0",
+    "@gracile/gracile": "0.8.2",
+    "@gracile-labs/css-helpers": "0.1.1",
     "bootstrap": "^5.3.3",
     "lit": "^3.2.1",
     "vite": "^6.2.5"
