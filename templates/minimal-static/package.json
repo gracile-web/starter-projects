@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@gracile/gracile": "0.8.1",
+    "@gracile/gracile": "0.8.2-next.0",
     "lit": "^3.2.1",
-    "vite": "^6.0.5"
+    "vite": "^6.2.5"
   },
   "devDependencies": {
     "@types/node": "^22.1.0",

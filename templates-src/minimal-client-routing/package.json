@@ -12,7 +12,7 @@
     "@gracile/gracile": "link:../../../gracile/packages/gracile",
     "@gracile-labs/client-router": "link:../../../gracile/packages/labs/client-router",
     "lit": "^3.2.1",
-    "vite": "^6.0.5"
+    "vite": "^6.2.5"
   },
   "devDependencies": {
     "@types/node": "^22.1.0",

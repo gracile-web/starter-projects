@@ -12,7 +12,7 @@
   "dependencies": {
     "@gracile/gracile": "link:../../../gracile/packages/gracile",
     "lit": "^3.2.1",
-    "vite": "^6.0.5",
+    "vite": "^6.2.5",
     "express": "^5.0.1"
   },
   "devDependencies": {
